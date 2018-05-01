@@ -1,0 +1,52 @@
+# SHINE v1.0 by Callum McCloskey (Coltify/Spittn) 
+#
+# COLORS: Black, Dark Blue, Dark Green, Dark Aqua, Dark Red, Purple, Gray, Dark Gray, Blue, Green, Aqua, Red, Dark Purple, Yellow and White
+# PLACEHOLDERS: %color% - returns the specified color-name colored in that color. :) 
+#
+# Decide on whether colors will be activate by command ex: '/glow blue' or by 
+# a menu (GUI) which the user will be able to select their desired color, ex: '/glow' will open menu.
+command-or-menu: menu
+#
+# Inventory title for color selecting menu. 
+menu-title: "&8» &3Colors &8«"
+#
+# Color item shown in menu when player has permission to a color.
+menu-haspermission-item:
+#
+# Item type -> available types: [WOOL, CLAY, CONCRETE, CONCRETE_POWDER] 
+  type: CONCRETE
+#
+# Item display name.
+  name: "&8» %color% &8«"
+#
+# Item display description.
+  lore:
+    - "&8» &7Right click to select this glow color. &8«"
+#
+# Color item shown in menu when player doesn't have permission to a color.
+menu-nopermission-item:
+  type: CONCRETE_POWDER
+  name: "&8» %color% &8«"
+  lore:
+    - "&8» &7&nYou don't have this color unlocked!&8 «"
+    - " "
+    - "&8» &7You can unlock this color at our store.."
+    - "&8» &e&nwww.example.com"
+# -+-----------------------+- # 
+#    Message Configuration    #
+# -+-----------------------+- # 
+permission-message: "&cYou don't have permission to use this command."
+glow-message: "&eYou have activated your %color% &eglow!"
+invalidcolor-message: "&cThe color you have specified is not supported!"
+invalidtarget-message: "&cCouldn't locate a target to glow!"
+#
+# END OF FILE - Good Job!
+#  
+#       /@
+#       \ \
+#     ___> \
+#    (__O)  \
+#   (____@)  \
+#   (____@)   \
+#    (__o)_    \
+#          \    \

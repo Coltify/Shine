@@ -1,0 +1,10 @@
+name: Shine
+version: 1.0
+author: Callum McCloskey (spittn/coltify) 
+description: Shine allows users or entities to have a colorful glow around them, a great cosmetic! 
+main: dev.spittn.shine.Main
+commands:
+  glow:
+    description: Create a colorful glow around your character! 
+  setglow:
+    description: Create a colorful glow around a target entity!
